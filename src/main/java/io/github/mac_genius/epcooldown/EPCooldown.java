@@ -5,11 +5,19 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
 /**
- * Created by Mac on 4/18/2015.
+ * This is the main class for the plugin. It forces
+ * player to have a cooldown time before he can throw
+ * another enderpearl.
+ *
+ * @author John Harrison
  */
 public class EPCooldown extends JavaPlugin {
     Plugin plugin = this;
 
+    /**
+     * This is called when the plugin is enabled. It registers
+     * the commands and the listeners.
+     */
     public void onEnable() {
         plugin.saveDefaultConfig();
         BukkitScheduler scheduler = this.getServer().getScheduler();
@@ -19,6 +27,9 @@ public class EPCooldown extends JavaPlugin {
         getLogger().info("EPCooldown Enabled");
     }
 
+    /**
+     * This is called when the plugin is disabled.
+     */
     public void onDisable() {
         getLogger().info("Plugin Disabled");
     }
