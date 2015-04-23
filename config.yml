@@ -1,0 +1,17 @@
+# This is where you can edit some of the settings for this plugin!
+# Cooldown is how long a player needs to wait in seconds before a player can use an ender pearl again.
+# Endermite spawning will cancel endermites from spawning from using ender pearls.
+# Make sure to have '' around your sentences. Leave the '' empty if you don't want to have a message.
+# The scoreboard option displays the scoreboard title plus the cooldown time remaining.
+# You can set it to "false" to get rid of it, "true" to enable it, and "fancy" to make it look nicer.
+# WARNING: SETTING THE SCOREBOARD TO "fancy" WILL ERASE ALL CURRENT SCOREBOARD VALUES FOR PLAYERS. DO NOT USE IF YOU CURRENTLY USE ANYTHING WITH THE SCOREBOARD.
+# Setting to true will not erase current scoreboard settings, but will have all players on it.
+
+cooldown: 15
+endermite spawning: false
+custom messages:
+    cooldown message: '&cStill cooling down for %seconds% seconds.'
+    rightclick message: 'You cannot use this on a block.'
+    scoreboard title: 'Welcome %player%!'
+
+scoreboard: false

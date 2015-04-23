@@ -1,0 +1,35 @@
+name: EPCooldown
+main: io.github.mac_genius.epcooldown.EPCooldown
+version: 1.0
+permissions:
+    epc.*:
+        description: Gives access to all commands for the plugin
+        children:
+            epc.reload: true
+            epc.help: true
+            epc.use: true
+    epc.reload:
+        description: Allows a player to reload the config
+        default: op
+    epc.help:
+        description: Brings up the commands
+        default: op
+    epc.use:
+        description: Players have a cooldown when using enderpearls
+        default: false
+commands:
+    epc:
+        description: This is the help command.
+        usage: /epc
+        permission: epc.help
+        permission-message: You do not have permission to do that.
+    epc reload:
+            description: This will reload the plugin.
+            usage: /epc reload
+            permission: epc.reload
+            permission-message: You do not have permission to do that.
+    epc reload:
+            description: This will show the commands.
+            usage: /epc help
+            permission: epc.help
+            permission-message: You do not have permission to do that.
