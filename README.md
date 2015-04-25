@@ -1,0 +1,2 @@
+# EPCooldown
+This plugin allows a user to set a cooldown time for using enderpearls. It will also force a user to look at the air to use, instead of looking directly at a block. You can also turn of endermite spawning in the plugin config file. Now you can also have custom messages! There is also a fancy scoreboard option to display the remaining cooldown of a player. Check out the plugin on bukkit here: http://dev.bukkit.org/bukkit-plugins/epcooldown/
